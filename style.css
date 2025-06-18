@@ -969,7 +969,31 @@ footer::before {
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+
+   #contact .container {
+    max-width: 1200px;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: var(--fs-md);
+    padding: var(--space-md);
+  }
+
+  #contact button {
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--fs-md);
+  }
 }
+
 
 /* Large Screens (1200px - 1439px) */
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -984,6 +1008,21 @@ footer::before {
 
   .floating-element {
     display: block;
+  }
+
+   #contact form {
+    max-width: 600px;
+    gap: var(--space-md);
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: var(--fs-sm);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  #contact button {
+    padding: var(--space-sm) var(--space-lg);
   }
 }
 
@@ -1002,6 +1041,19 @@ footer::before {
   .about-flex {
     gap: var(--space-2xl);
   }
+
+  #contact form {
+    max-width: 550px;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: var(--fs-sm);
+  }
+
+  #contact button {
+    font-size: var(--fs-sm);
+  }
 }
 
 /* Medium Screens (768px - 991px) */
@@ -1018,6 +1070,19 @@ footer::before {
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-lg);
+  }
+
+   #contact form {
+    max-width: 500px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: var(--space-sm);
+  }
+
+  #contact button {
+    font-size: var(--fs-sm);
   }
 }
 
@@ -1053,6 +1118,20 @@ footer::before {
 
   nav a {
     padding: var(--space-xs) var(--space-sm);
+  }
+
+  #contact form {
+    padding: 0 var(--space-sm);
+    gap: var(--space-sm);
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: var(--fs-sm);
+  }
+
+  #contact button {
+    font-size: var(--fs-sm);
   }
 }
 
@@ -1102,6 +1181,20 @@ footer::before {
   .floating-element {
     display: none;
   }
+
+  #contact form {
+    padding: 0 var(--space-sm);
+    gap: var(--space-sm);
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: var(--fs-sm);
+  }
+
+  #contact button {
+    font-size: var(--fs-sm);
+  }
 }
 
 /* Specific Custom Breakpoint for 318.4px width (very small phones) */
@@ -1145,5 +1238,25 @@ footer::before {
   nav a {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
+  }
+
+  #contact form {
+    padding: 0 0.5rem;
+    gap: 0.75rem;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  #contact button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #contact h2 {
+    font-size: 1.2rem;
   }
 }
