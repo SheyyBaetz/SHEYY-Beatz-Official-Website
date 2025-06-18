@@ -952,20 +952,20 @@ footer::before {
   .container {
     max-width: 1400px;
   }
-
+  
   .about-flex {
     grid-template-columns: 1fr 1.2fr;
     gap: var(--space-4xl);
   }
-
+  
   .about-text {
     text-align: left;
   }
-
+  
   .floating-element {
     display: block;
   }
-
+  
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
@@ -977,11 +977,11 @@ footer::before {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-3xl);
   }
-
+  
   .about-text {
     text-align: left;
   }
-
+  
   .floating-element {
     display: block;
   }
@@ -993,12 +993,12 @@ footer::before {
     gap: var(--space-sm);
     padding: var(--space-sm) var(--space-md);
   }
-
+  
   nav a {
     padding: var(--space-sm) var(--space-md);
     font-size: var(--fs-sm);
   }
-
+  
   .about-flex {
     gap: var(--space-2xl);
   }
@@ -1009,12 +1009,12 @@ footer::before {
   .hero-buttons {
     gap: var(--space-md);
   }
-
+  
   .btn {
     min-width: 160px;
     padding: var(--space-sm) var(--space-lg);
   }
-
+  
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-lg);
@@ -1101,49 +1101,5 @@ footer::before {
 
   .floating-element {
     display: none;
-  }
-}
-
-/* Specific Custom Breakpoint for 318.4px width (very small phones) */
-@media (min-width: 317px) and (max-width: 320px) {
-  .container {
-    padding: 0 1rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.25rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-  }
-
-  .btn {
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem;
-    min-width: 120px;
-  }
-
-  .video-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .about-flex {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .about-text {
-    font-size: 0.9rem;
-  }
-
-  .floating-element {
-    display: none;
-  }
-
-  nav a {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
   }
 }
