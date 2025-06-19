@@ -588,14 +588,14 @@ nav li:nth-child(5) a { transition-delay: 0.2s; }
 
 /* Modern Contact Section */
 .contact {
-  padding: 8rem 0;
+  padding: 8rem 2rem;
   background: rgba(20, 20, 30, 0.9);
   backdrop-filter: blur(20px);
 }
 
 .contact h2 {
   text-align: center;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: 3rem;
   background: var(--secondary-gradient);
   -webkit-background-clip: text;
@@ -615,21 +615,25 @@ form {
   border: 1px solid var(--glass-border);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-soft);
+  width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
+  width: 100%;
   padding: 1.2rem 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: inherit;
   transition: var(--transition);
   backdrop-filter: blur(10px);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: #4facfe;
   box-shadow: 0 0 20px rgba(79, 172, 254, 0.3);
@@ -641,7 +645,7 @@ button {
   border: none;
   color: white;
   padding: 1.2rem 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 50px;
   cursor: pointer;
@@ -673,6 +677,48 @@ button:hover::before {
 button:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 1rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 1rem 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 1rem 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.5rem;
+  }
 }
 
 /* Modern Footer */
